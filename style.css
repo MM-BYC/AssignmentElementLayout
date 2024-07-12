@@ -1,0 +1,280 @@
+/* * {
+  margin: 1em;
+  padding: 1em;
+} */
+
+body{
+    text-align:center;
+    /* margin: 1em; */
+}
+header {
+  border: dashed red;
+  border-width: 4px;
+  /* height: 12vh; */
+  margin: 1em;
+}
+.name, .currentDate {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: bold; 
+  font-size: 1.5em;
+}
+
+nav {
+  border: dashed blue;
+  margin: 1em;
+  border-width: 4px;
+  height: 18vh;
+  display:flex; 
+  justify-content: space-evenly;
+}
+.sectionContainer {
+  border: dashed green;
+  border-width: 4px;
+  margin: 1em;
+}
+section {
+  border: solid gray;
+  border-width: 0.2px;
+  /* height: 9vh; */
+  margin: 1em;
+}
+.articleTitle{
+  border: 2px solid black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: normal;
+  font-size: 1.5em;
+  margin: 0.6em;
+  text-align: center;
+}
+
+article {
+font-family: "Roboto", sans-serif;
+border: 2px solid green;
+max-width: 60em;
+margin: 12px auto;
+text-align: left;
+}
+
+header h1 {
+  text-align: center;
+} 
+
+.shopsite, h1, h2, .onsale{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal; 
+  font-size: 1.5em;
+  text-align: left;
+}
+.shopsite {
+  border: 2px solid black;
+  display: inline-block;
+  /* border-width: 5px;   */
+  padding: 2em;
+  /* height: 4vh; */
+  margin: 1em;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.parentContainer, th{
+  margin: 1em;
+  border: solid purple;
+  padding: 2em;
+}
+
+/* tells the childContainer to occupy 1005 of the parentContainer */
+.childContainer {
+  border: 5px solid black;
+  width: 100%;    
+  padding: 20px;
+ }
+
+/* tells the td inside the childContainer to split columsn equally */
+.childContainer td {
+  border: 2px solid blue;
+  padding: 8px;
+  width: 50%;
+}
+.quote {
+  /* border: 2px solid black; */
+    font-family: Roboto; /* Example font */
+    line-height: 2.5em;
+    font-size: 12px; /* Base font size */
+    padding-bottom: 40px; /* Optional: Add padding for better visual */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 600px;   
+ }
+
+.quote span:hover {
+    font-size: 22px; /* Increase font size on hover */
+    background-color: bisque;
+ }
+ .jobs {
+    font-family: "Roboto", sans-serif;
+    border: solid gray;
+    float:left;
+    /* margin-right: 5px; */
+    width: 80px;
+    /* height: 100px; */
+    border-radius: 50px;
+ }
+
+ .crazyOnes {
+  display: inline-block;
+  margin: 0;  
+}
+ 
+/* 
+.tRow:not(:last-child) td{
+  border: 2px solid red;
+} */
+
+#Macys {
+  background-color: red;
+}
+#ToysRus {
+  background-color: blue;
+}
+#Kohls {
+  background-color: green;
+}
+#Target {
+  background-color: purple;
+}
+
+.footer {
+  display:flex;
+ }
+ 
+ .ftrTitle {
+   font-weight: bold;
+ }
+ 
+ maincolumn1 {
+   /* border: 2px solid black; */
+   /* max-width: 20%; */
+   padding: 20px;
+   text-align: left;
+  } 
+
+maincolumn2 {
+  /* border: 2px solid black; */
+  padding: 20px;
+  text-align: left;
+  } 
+
+maincolumn3 {
+  /* border: 2px solid black; */
+  padding: 20px;
+  width: 350px;   
+  /* flex: 2; Takes up twice the space of mainfooterleft */  
+  /* margin: 0 auto;   */
+  text-align: left;
+}
+
+maincolumn4 {
+  padding: 20px;
+  text-align: left;
+}
+
+maincolumn5 {
+  /* border: 2px solid black; */
+  padding: 20px;
+  flex:1
+}
+ 
+.globe {
+  color: black;
+}
+
+hr {
+  height: 0.5vw;
+  background-color: black;
+}
+
+# bonus settings
+
+.spanColumn {
+margin: 0 auto;
+}
+
+.spanColumn, th, td {
+  border: 2px solid black;
+}
+
+ .tRowHeader, .tRowHeader td {
+  width: 100%;
+}
+
+# table with contents settings
+
+.tableContents {
+  border: 2px solid black;
+}
+
+.spanColumn2 {
+  width: 100%;
+/* margin: 0 auto; */
+}
+
+.spanColumn2, th, td {
+  border: 2px solid black;
+}
+
+ .tRowHeader2, .tRowHeader2 td {
+  width: 100%;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-bullets {
+  /* border: 2px solid red; */
+  margin: 20px;
+  display:flex;
+  justify-content:center;
+  }
+
+.option1, .option2, .option3, .option4 {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  color: white;
+}
+
+.option1 {
+  background-color: red;
+}
+.option2 {
+  background-color: blue;
+}
+.option3 {
+  background-color: green;
+}
+.option4 {
+  background-color: purple;
+}
+
+.humanoid {
+ 
+  align-items: normal;
+}
+
+.apolloDesc {
+   width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.spanColumn2 .humanoidColumn{
+  width: 30%;
+}
