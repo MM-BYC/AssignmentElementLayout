@@ -1,6 +1,9 @@
+
 let element = document.querySelector(".currentDate");
 let date = new Date();
+
 element.innerHTML =  date.toLocaleDateString();
+
 
         // JavaScript to add event listener
 let hoverDiv = document.getElementById('hoverDiv');
