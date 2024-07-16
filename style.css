@@ -145,9 +145,7 @@ ul {
   padding: 0;
   width: 100%;  
 }
-.capitalizeHere em::first-letter {
-  text-transform: capitalize;
-}
+
 /* 
 .tRow:not(:last-child) td{
   border: 2px solid red;
