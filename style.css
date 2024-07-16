@@ -32,7 +32,7 @@ nav {
   border: dashed green;
   border-width: 4px;
   margin: 1em;
- }
+}
 section {
   border: 2px solid gray;
    /* height: 9vh; */
@@ -60,6 +60,12 @@ header h1 {
   text-align: center;
 } 
 
+/* ul sets the margin,padding to 0, and the width to 100% of its containing nav */
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 .shopsite, h1, h2, .onsale{
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -70,8 +76,9 @@ header h1 {
 .shopsite {
   border: 2px solid black;
   display: inline-block;
-  /* border-width: 5px;   */
-  padding: 2em;
+  width: 20%;
+  text-align: center;
+  padding: 20px 0; /* (top-bottom left-right) */
   /* height: 4vh; */
   margin: 1em;
   border-radius: 20px;
@@ -86,21 +93,25 @@ header h1 {
   border: solid purple;
   padding: 2em;
   overflow: hidden;}
- 
+
 /* tells the childContainer to occupy 1005 of the parentContainer */
 .childContainer {
   border: 5px solid black;
   padding: 20px;
   width: 100%;
- }
+}
 
-/* tells the td inside the childContainer to split columsn equally */
+/* tells the td inside the childContainer to split columns equally */
 .childContainer th tr td {
   border: 2px solid blue;
   padding: 8px;
   width: 50%;
 }
 
+/* quote parent container */
+.quote {
+  display: flex;
+}
 .quote {
   /* border: 2px solid black; */
     font-family: Roboto; /* Example font */
@@ -108,28 +119,35 @@ header h1 {
     font-size: 12px; /* Base font size */
     padding-bottom: 40px; /* Optional: Add padding for better visual */
     transition: background-color 0.3s ease; /* Smooth transition */
-
- }
+}
 
 .quote span:hover {
-    font-size: 22px; /* Increase font size on hover */
+    font-size: 30px; /* Increase font size on hover */
     background-color: bisque;
- }
- .jobs {
-    /* font-family: "Roboto", sans-serif; */
-    border: solid gray;
-    float:left;
-    margin-left: 5em;
-    margin-right:0;
-    width: 120px;
-    /* height: 100px; */
-    border-radius: 60px;
- }
-
- .crazyOnes {
-  margin: 0;  
 }
- 
+
+.jobs {
+    /* border: solid gray; */
+    margin: 1em 3em;    
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.crazyOnes {
+  /* border: 2px solid peru; */
+  text-align:left;
+  font-size: 2em;;
+
+}
+.crazyOnesContainer {
+  /* border: 2px solid green; */
+  margin: 1em;
+  padding: 0;
+  width: 100%;  
+}
+.capitalizeHere em::first-letter {
+  text-transform: capitalize;
+}
 /* 
 .tRow:not(:last-child) td{
   border: 2px solid red;
@@ -150,53 +168,50 @@ header h1 {
 
 .footer {
   display:flex;
- }
- 
- .ftrTitle {
-   font-weight: bold;
- }
- 
- maincolumn1 {
-   /* border: 2px solid black; */
-   /* max-width: 20%; */
-   padding: 20px;
-   text-align: left;
-   width:100%;
-  } 
+}
 
-maincolumn2 {
-  /* border: 2px solid black; */
+.ftrTitle {
+  font-weight: bold;
+}
+
+.mainColumn1 {
+  border: 2px solid black;
   padding: 20px;
   text-align: left;
-  width:100%;
-
-  } 
-
-maincolumn3 {
-  /* border: 2px solid black; */
-  padding: 20px;
-  /* width: 350px;    */
   width: 100%;
-  /* flex: 2; Takes up twice the space of mainfooterleft */  
-  /* margin: 0 auto;   */
+  } 
+
+.mainColumn2 {
+  border: 2px solid black;
+  padding: 20px;
+  text-align: left;
+  width:100%;
+
+  } 
+
+.mainColumn3 {
+  border: 2px solid black;
+  padding: 20px;
+  width: 100%;   
   text-align: left;
 }
 
-maincolumn4 {
+.mainColumn4 {
+  border: 2px solid black;
   padding: 20px;
   text-align: left;
   width:100%;
 
 }
 
-maincolumn5 {
-  /* border: 2px solid black; */
+.mainColumn5 {
+  border: 2px solid black;
   padding: 20px;
   width:100%;
 
-  flex:1
+  /* flex:1 */
 }
- 
+
 .globe {
   color: black;
 }
@@ -216,7 +231,7 @@ margin: 0 auto;
   border: 2px solid black;
 }
 
- .tRowHeader, .tRowHeader td {
+.tRowHeader, .tRowHeader td {
   width: 100%;
 }
 
@@ -235,7 +250,7 @@ margin: 0 auto;
   border: 2px solid black;
 }
 
- .tRowHeader2, .tRowHeader2 td {
+.tRowHeader2, .tRowHeader2 td {
   width: 100%;
 }
 
@@ -272,7 +287,6 @@ margin: 0 auto;
 }
 
 .humanoid {
- 
   align-items: normal;
 }
 
@@ -285,7 +299,7 @@ td.humanoidColumn {
   width: 50%;}
   
 .apolloDesc {
-   width: 100%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   object-fit: cover;
